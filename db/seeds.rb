@@ -1,3 +1,5 @@
+require 'pry'
+
 ClientLead.destroy_all
 ClientAccount.destroy_all
 Employee.destroy_all
@@ -23,3 +25,19 @@ project3 = Project.create(project_name: "Banner Update", employee: employee3, cl
 project4 = Project.create(project_name: "Website Maintenance", employee: employee4, client_account: client_account1)
 project5 = Project.create(project_name: "Photoshoot", employee: employee2, client_account: client_account2)
 project6 = Project.create(project_name: "Print Ad", employee: employee3, client_account: client_account3)
+
+
+binding.pry
+
+#To find all projects an employee works on - employee1.projects
+#To find all employees working on a project - project1
+
+
+
+
+
+
+# (1..4).each do |i|
+#     employee1 = Employee.create(name: "name" + i.to_s, employee_title: "title" + i.to_s)
+#     project1 = Project.create(project_name: "project name" + i.to_s, employee: employee1, client_account1 + i.to_s: client_account2)
+# end
