@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
     belongs_to :client_account
-    belongs_to :employee
+    has_many :project_employees
+    has_many :employees, through: :project_employees
     # binding.pry
 end

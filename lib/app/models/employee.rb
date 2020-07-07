@@ -1,6 +1,6 @@
 class Employee < ActiveRecord::Base
-    has_many :projects
-    has_many :client_accounts, through: :projects
-    has_many :client_leads, through: :projects
+    belongs_to :client_account
+    has_many :project_employees
+    has_many :projects, through: :project_employees
     # binding.pry
 end
