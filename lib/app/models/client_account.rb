@@ -4,4 +4,5 @@ class ClientAccount < ActiveRecord::Base
     has_many :employees
     has_many :project_employees, through: :projects
     has_many :project_employees, through: :employees
+
 end

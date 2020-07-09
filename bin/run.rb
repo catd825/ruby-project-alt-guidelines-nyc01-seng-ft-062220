@@ -1,10 +1,8 @@
+require 'tty-prompt'
 
 require_relative '../config/environment'
-# require 'artii'
+require_relative '../lib/app/models/command_line_interface'
 
-
-puts "hello world"
-
-# artii "hello world"
-
+cli = CommandLineInterface.new
+cli.run
 
