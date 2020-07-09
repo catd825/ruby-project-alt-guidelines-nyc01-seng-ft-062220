@@ -148,7 +148,7 @@ Faker::IDNumber.valid # returns a random valid Social Security Number
 
 If you look in your `Gemfile`, you'll notice that it has already been included as a dependency for you and was installed when you ran `bundle install`. We can use `faker` to manually create seed data that is both random and makes sense for our domain models. For example:
 
-```ruby
+```Ruby
 User.create(name: Faker::Name.name)
 Restaurant.create(name: Faker::Company.name)
 Review.create(user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id, content: Faker::Hacker.say_something_smart)
